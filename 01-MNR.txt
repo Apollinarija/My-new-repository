@@ -1,0 +1,42 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Разветвления_07
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Введите любое действительно число: ");
+            double a = double.Parse(Console.ReadLine());
+            Console.Write("Введите еще одно действительное число: ");
+            double b = double.Parse(Console.ReadLine());
+            Console.Write("И еще одно действительное число: ");
+            double c = double.Parse(Console.ReadLine());
+            if (a >= 1 && a <= 3 && b >= 1 && b <= 3 && c >= 1 && c <= 3)
+            {
+                Console.WriteLine("Все числа: " + a + "; " + b + "; " + c + " принадлежат заданному интервалу.");
+            }
+            else if (a >= 1 && a <= 3 && b >= 1 && b <= 3 && c < 1 && c > 3)
+            {
+                Console.WriteLine("Числа: " + a + "; " + b + " принадлежат заданному интервалу.");
+            }
+            else if (a >= 1 && a <= 3 || b < 1 && b > 3 || c >= 1 && c <= 3)
+            {
+                Console.WriteLine("Числа: " + a + "; " + c + " принадлежат заданному интервалу.");
+            }
+            else if (a < 1 && a > 3 || b >= 1 && b <= 3 || c >= 1 && c <= 3)
+            {
+                Console.WriteLine("Числа: " + b + "; " + c + " принадлежат заданному интервалу.");
+            }
+            else
+            {
+                Console.WriteLine("Ни одно из чисел не принадлежит заданному интервалу.");
+            }
+            Console.ReadKey();
+        }
+    }
+}
