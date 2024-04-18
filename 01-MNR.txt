@@ -12,10 +12,13 @@ namespace Разветвления_07
         {
             Console.Write("Введите любое действительно число: ");
             double a = double.Parse(Console.ReadLine());
+
             Console.Write("Введите еще одно действительное число: ");
             double b = double.Parse(Console.ReadLine());
+
             Console.Write("И еще одно действительное число: ");
             double c = double.Parse(Console.ReadLine());
+
             if (a >= 1 && a <= 3 && b >= 1 && b <= 3 && c >= 1 && c <= 3)
             {
                 Console.WriteLine("Все числа: " + a + "; " + b + "; " + c + " принадлежат заданному интервалу.");
