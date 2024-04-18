@@ -9,19 +9,18 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
-            // Форматируем шапку программы
             Console.BackgroundColor = ConsoleColor.Green;
             Console.ForegroundColor = ConsoleColor.Black;
+
             Console.WriteLine("********************");
             Console.WriteLine("**** Мой проект ****");
             Console.WriteLine("********************");
-            // Основная программа
+           
             Console.BackgroundColor = ConsoleColor.Black;
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine();
             Console.WriteLine("Привет, Мир!");
 
-            // Ожидание нажатия клавиши Enter перед завершением работы
             Console.ReadLine();
         }
     }
